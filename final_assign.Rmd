@@ -5,10 +5,11 @@ date: "04/23/2015"
 output:
   html_document:
     fig_caption: yes
+    keep_md: yes
     self_contained: false
 ---
 
-Download database from web
+Download databases from web (source "http://groupware.les.inf.puc-rio.br/har")
 ```{r}
 setwd("~/Copy/PML_Assig")
 trainURL <- "https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv"
@@ -86,7 +87,7 @@ bwplot(results,main="Box plot of accuracy and Kappa by different model")
 diffValues <- diff(results) 
 summary(diffValues)
 ```
-__I select Random Forest (RF) model because of its higher Accuracy and Kappa (less estimate of out of samples error)__ 
+I select Random Forest (RF) model because of its higher Accuracy and Kappa with an __expected out of samples error of 13%__ 
 
 ###Prediction
 

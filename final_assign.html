@@ -70,7 +70,7 @@ img {
 </div>
 
 
-<p>Download database from web</p>
+<p>Download databases from web (source “<a href="http://groupware.les.inf.puc-rio.br/har" class="uri">http://groupware.les.inf.puc-rio.br/har</a>”)</p>
 <pre class="r"><code>setwd(&quot;~/Copy/PML_Assig&quot;)
 trainURL &lt;- &quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv&quot;
 testURL &lt;- &quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;
@@ -196,7 +196,7 @@ summary(diffValues)</code></pre>
 ## GBM   0.2523              0.15065   0.41321
 ## LDA   5.256e-16 3.921e-15           0.26255
 ## RPART &lt; 2.2e-16 &lt; 2.2e-16 &lt; 2.2e-16</code></pre>
-<p><strong>I select Random Forest (RF) model because of its higher Accuracy and Kappa (less estimate of out of samples error)</strong></p>
+<p>I select Random Forest (RF) model because of its higher Accuracy and Kappa with an <strong>expected out of samples error of 13%</strong></p>
 </div>
 <div id="prediction" class="section level3">
 <h3>Prediction</h3>
